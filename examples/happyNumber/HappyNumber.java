@@ -17,8 +17,8 @@ class HappyNumber {
 		return sum;
 	}
 	
-	public  boolean isHappyNumber(int num) {
-		int sum = sumNum(num);
+	public  boolean isHappyNumber(int n) {
+		int sum = sumNum(n);
 		if (sum == 1) {
 			// System.out.println("sum is: " + sum);
 			return true;
