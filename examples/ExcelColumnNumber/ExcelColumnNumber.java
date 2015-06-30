@@ -1,3 +1,7 @@
+import java.net.URI;
+import java.net.URISyntaxException;
+
+
 class ExcelColumnNumber{
   public int titleToNumber(String s) {
              int n = 0;
@@ -11,5 +15,14 @@ class ExcelColumnNumber{
 	public static void main(String[] args) {
 		ExcelColumnNumber ecn = new ExcelColumnNumber();
 		System.out.println(ecn.titleToNumber("AA"));
+		
+    try {
+        URI uri = new URI("/a/../a////../////".toString());
+        uri = uri.normalize();
+        System.out.println(uri.getPath());
+    } catch (URISyntaxException e) {
+        e.printStackTrace();
+    }
+		
 	}
 }
