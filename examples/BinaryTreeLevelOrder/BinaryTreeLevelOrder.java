@@ -2,13 +2,13 @@ import java.util.List;
 import java.util.ArrayList;
 
 class BinaryTreeLevelOrder {
-	public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
-		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+	public List<List<Integer>> levelOrder(TreeNode root) {
+		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		search(root, 0, result);
 		return result;
 	}
 	
-	private void search(TreeNode root, int level,  ArrayList<ArrayList<Integer>> result){
+	private void search(TreeNode root, int level,  List<List<Integer>> result){
 		if (root == null) {
         return;
     }
@@ -37,9 +37,9 @@ class BinaryTreeLevelOrder {
 		right.left = left2;
 		right.right = right2;
 		
-		ArrayList result = bt.levelOrder(root);
+		List result = bt.levelOrder(root);
 		for (int i =0 ; i<result.size();i++){
-			ArrayList temp = (ArrayList)result.get(i);		
+			List temp = (List)result.get(i);		
 			for (int j=0; j< temp.size(); j++){				
 				System.out.print(temp.get(j));
 			}
