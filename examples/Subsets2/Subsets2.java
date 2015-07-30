@@ -41,7 +41,7 @@ class Subsets2 {
 			
 	public static void main(String[] args) {
 		Subsets2 s2 = new Subsets2();
-		int[] nums = {1,2,2};
+		int[] nums = {1,1};
 		List<List<Integer>> ans = s2.subsetsWithDup(nums);
 		
 		for(int i = 0 ; i< ans.size(); i ++) {
