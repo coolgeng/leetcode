@@ -5,6 +5,8 @@ import java.util.Comparator;
 
 class MergeIntervals{
 	
+  
+  
 	public static void main(String[] args) {
 		
 		List<Interval> intervals = new ArrayList<Interval>();

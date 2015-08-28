@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 class Subsets {
 	public List<List<Integer>> subsets(int[] nums) {
-			Arrays.sort(nums);
+      // Arrays.sort(nums);
 		
 			List<List<Integer>> ans = new ArrayList<List<Integer>>();		
 		
@@ -31,22 +31,29 @@ class Subsets {
 		}
 	
 	public static void main(String[] args) {
-		Subsets s = new Subsets();
-		int[] nums = {1,2,3,4,5,6,7,8,9,10};
-		// List<List<Integer>> ans = s.subsets(nums);
-		
-		// for(int i = 0 ; i< ans.size(); i ++) {
-	// 		List<Integer> temp = (List)ans.get(i);
-	// 		for (int j = 0 ; j < temp.size(); j ++) {
-	// 			System.out.print("" + temp.get(j));
-	// 		}
-	// 		System.out.println("");
-	// 	}
-	//	
-	for (int i = 0 ; i < 1 << 3 ; i ++) {
-		System.out.println(i);		
-	}
+		// Subsets s = new Subsets();
+//     int[] nums = {1,2,3,4,5,6,7,8,9,10};
+//     // List<List<Integer>> ans = s.subsets(nums);
+//
+//     // for(int i = 0 ; i< ans.size(); i ++) {
+//   //     List<Integer> temp = (List)ans.get(i);
+//   //     for (int j = 0 ; j < temp.size(); j ++) {
+//   //       System.out.print("" + temp.get(j));
+//   //     }
+//   //     System.out.println("");
+//   //   }
+//   //
+//   for (int i = 0 ; i < 1 << 3 ; i ++) {
+//     System.out.println(i);
+//   }
+  
+  List<String> list = new ArrayList<String>();
+  list.add("1");
+  list.add("2");
+	list.remove(list.size()-1);  
+  for (String str: list){
+    System.out.println(str);
+  }
 
-		
 	}
 }
